@@ -80,12 +80,8 @@ WSGI_APPLICATION = 'auth_system_drf.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'auth_drf',
-        'USER': 'postgres',
-        'PASSWORD': '9723163834',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
